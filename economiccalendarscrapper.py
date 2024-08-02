@@ -217,7 +217,7 @@ def query_economic_calendar(country_name):
 
     params = {}
 
-    url = 'https://tradingeconomics.com/united-states/calendar'
+    url = "https://tradingeconomics.com/%s/calendar" % country_name
     response = requests.get(url, params=params, headers=headers)
 
     parser = TEHTMLParser()
@@ -233,4 +233,3 @@ if __name__ == "__main__":
     if news:
         for new in news:
             print(new)
-
