@@ -226,7 +226,7 @@ def query_economic_calendar(country_name):
     return parser.news
 
 
-# example : query("united-states"))
+# example : query_economic_calendar("united-states")
 if __name__ == "__main__":
     news = query_economic_calendar("united-states")
 
